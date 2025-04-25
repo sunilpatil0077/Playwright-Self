@@ -25,5 +25,5 @@ test("test", async({page})=>{
 test("Verify the Flipkart title",async({page})=>{
 
     await page.goto("https://www.flipkart.com/");
-    expect(page).toHaveURL("https://www.flipkart.co")
+    expect(page).toHaveURL("https://www.flipkart.com")
 })
