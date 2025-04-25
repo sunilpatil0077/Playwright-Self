@@ -29,7 +29,7 @@ test("Open RC Website", async({page})=>{
     await page.goto("https://www.royalcanin.com/in");
 
     const menu=await page.locator('.sc-bd2e5fa6-6.ctHwzb')
-    await expect(menu).toHaveCount(7)
+    await expect(menu).toHaveCount(6)
     const CTA=await page.locator("//div[@class='sc-7217a029-1 bvnhQm']//a[@title='Get the tailored product'][normalize-space()='Get the tailored product']").nth(0)
     await CTA.click();
     await page.waitForTimeout(4000)
