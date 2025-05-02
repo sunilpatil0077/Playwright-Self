@@ -34,5 +34,6 @@ test("Open RC Website", async({page})=>{
     await CTA.click();
     await page.waitForTimeout(4000)
     await expect(page).toHaveURL("https://www.royalcanin.com/in/pet-food-finder")
-
+    await page.waitForTimeout(4000)
+    await expect(page).toHaveURL("https://www.royalcanin.com/in/pet-food-finder")
 })
